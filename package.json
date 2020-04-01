@@ -1,0 +1,25 @@
+{
+  "name": "mrgz-react-css-spinners",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grzegorczykmichal/mrgz-react-css-spinners.git"
+  },
+  "keywords": [
+    "react",
+    "css",
+    "spinenr",
+    "loader"
+  ],
+  "author": "mgrz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grzegorczykmichal/mrgz-react-css-spinners/issues"
+  },
+  "homepage": "https://github.com/grzegorczykmichal/mrgz-react-css-spinners#readme"
+}
