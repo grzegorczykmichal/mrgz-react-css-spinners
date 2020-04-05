@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "rollup -c",
     "lint": "eslint '**/*.js'",
     "lint:fix": "eslint --fix '**/*.js'"
   },
@@ -43,6 +45,7 @@
     "husky": "^4.2.3",
     "lint-staged": "^10.1.2",
     "prettier": "2.0.2",
+    "rollup": "^2.3.3",
     "typescript": "^3.8.3"
   }
 }

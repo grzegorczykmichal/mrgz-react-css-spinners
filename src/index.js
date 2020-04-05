@@ -1,14 +1,18 @@
+import { dep } from "./module";
+
 function printUser(firstName, lastName, number, street, code, city, country) {
   console.log(
-    `${firstName} ${lastName} lives at ${number}, ${street}, ${code} in ${city}, ${country}`,
+    `${dep} ${firstName} ${lastName} lives at ${number}, ${street}, ${code} in ${city}, ${country}`,
   );
 }
-printUser(
-  "John",
-  "Doe",
-  48,
-  "998 Primrose Lane",
-  53718,
-  "Madison",
-  "United States of America",
-);
+// printUser(
+//   "John",
+//   "Doe",
+//   48,
+//   "998 Primrose Lane",
+//   53718,
+//   "Madison",
+//   "United States of America",
+// );
+
+export { printUser };
