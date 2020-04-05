@@ -7,6 +7,16 @@
     "lint": "eslint '**/*.js'",
     "lint:fix": "eslint --fix '**/*.js'"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/grzegorczykmichal/mrgz-react-css-spinners.git"
@@ -30,6 +40,8 @@
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.2",
     "prettier": "2.0.2",
     "typescript": "^3.8.3"
   }

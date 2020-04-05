@@ -10,10 +10,11 @@
     "prettier"
     // "prettier/@typescript-eslint"
   ],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
   "rules": {
     "prettier/prettier": "error"
   },
-  "plugins": [
-    "prettier"
-  ]
+  "plugins": ["prettier"]
 }
