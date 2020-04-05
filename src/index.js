@@ -10,5 +10,5 @@ printUser(
   "998 Primrose Lane",
   53718,
   "Madison",
-  "United States of America"
+  "United States of America",
 );
