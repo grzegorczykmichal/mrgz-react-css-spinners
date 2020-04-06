@@ -1,18 +1,9 @@
-import { dep } from "./module";
+import React from "react";
+import _ from "lodash";
 
-function printUser(firstName, lastName, number, street, code, city, country) {
-  console.log(
-    `${dep} ${firstName} ${lastName} lives at ${number}, ${street}, ${code} in ${city}, ${country}`,
-  );
-}
-// printUser(
-//   "John",
-//   "Doe",
-//   48,
-//   "998 Primrose Lane",
-//   53718,
-//   "Madison",
-//   "United States of America",
-// );
+const Spinner = () => {
+  const a = _.unary(1);
+  return <h1>Spinner {a}</h1>;
+};
 
-export { printUser };
+export default Spinner;

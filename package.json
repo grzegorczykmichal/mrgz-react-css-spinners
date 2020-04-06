@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "rm -rf dist",
-    "build": "rollup -c",
+    "build": "rollup -c -w",
+    "build:prod": "rollup -c --environment BUILD:production",
     "lint": "eslint '**/*.js'",
     "lint:fix": "eslint --fix '**/*.js'"
   },
@@ -36,6 +37,10 @@
   },
   "homepage": "https://github.com/grzegorczykmichal/mrgz-react-css-spinners#readme",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "eslint": "^6.8.0",
@@ -46,6 +51,11 @@
     "lint-staged": "^10.1.2",
     "prettier": "2.0.2",
     "rollup": "^2.3.3",
+    "rollup-plugin-babel": "^4.4.0",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "rollup-plugin-terser": "^5.3.0"
   }
 }
