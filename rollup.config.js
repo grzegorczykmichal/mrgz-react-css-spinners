@@ -1,3 +1,5 @@
+import resolve from "@rollup/plugin-node-resolve";
+import { string } from "rollup-plugin-string";
 import babel from "rollup-plugin-babel";
 import { terser } from "rollup-plugin-terser";
 
@@ -6,7 +8,13 @@ const production = process.env.BUILD === "production";
 const dist = "dist";
 const bundle = "bundle";
 
-const plugins = [babel({ exclude: "node_modules/**" })];
+const plugins = [
+  resolve(),
+  string({
+    include: "**/*.css",
+  }),
+  babel({ exclude: "node_modules/**" }),
+];
 
 if (production) {
   plugins.push(terser());

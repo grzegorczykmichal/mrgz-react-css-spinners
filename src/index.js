@@ -1,9 +1,12 @@
 import React from "react";
-import _ from "lodash";
+import { Ring } from "./Ring";
 
 const Spinner = () => {
-  const a = _.unary(1);
-  return <h1>Spinner {a}</h1>;
+  return (
+    <div>
+      <Ring />
+    </div>
+  );
 };
 
 export default Spinner;
