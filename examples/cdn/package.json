@@ -1,0 +1,13 @@
+{
+  "name": "cdn",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.html",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mrgz-react-css-spinners": "file:../.."
+  }
+}

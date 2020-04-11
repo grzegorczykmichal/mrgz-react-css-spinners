@@ -1,12 +1,3 @@
-import React from "react";
-import { Ring } from "./Ring";
-
-const Spinner = () => {
-  return (
-    <div>
-      <Ring />
-    </div>
-  );
-};
-
-export default Spinner;
+export * from "./Ellipsis";
+export * from "./Ring";
+export * from "./Ripple";
